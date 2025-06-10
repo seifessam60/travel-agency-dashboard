@@ -192,7 +192,7 @@ export const allTrips = [
   },
 ];
 
-const users = [
+export const users = [
   {
     id: 1,
     name: "John Doe",
