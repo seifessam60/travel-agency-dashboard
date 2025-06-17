@@ -36,13 +36,14 @@ const TripCard = ({
           <figcaption>{location}</figcaption>
         </figure>
       </article>
+
       <div className="mt-5 pl-[18px] pr-3.5 pb-5">
         <ChipListComponent id="travel-chip">
           <ChipsDirective>
             {tags.map((tag, index) => (
               <ChipDirective
                 key={index}
-                text={getFirstWord(tag)}
+                text={tag && getFirstWord(tag)}
                 cssClass={cn(
                   index === 1
                     ? "!bg-pink-50 !text-pink-500"
